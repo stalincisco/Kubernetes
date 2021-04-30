@@ -31,7 +31,7 @@
       
 ## Installing kubeadm 
 
-### Letting iptables see bridged traffic
+### Letting iptables see bridged traffic (Note: Please copy the below command from Kuberenetes website)
 
         cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
         br_netfilter
@@ -49,6 +49,9 @@
 
       $ sudo apt-get install -y apt-transport-https ca-certificates curl
       
+      $ sudo ufw disable
+      
+
   ## Go to Step 2. Steps to install Kubernetes
 
 --------------------------------------------------------------------------------------
