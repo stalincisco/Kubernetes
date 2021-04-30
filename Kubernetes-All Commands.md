@@ -1,29 +1,29 @@
 # How to install docker and kubernetes in centos 
 
- $  systemctl stop firewalld
+    $  systemctl stop firewalld
 
- $  systemctl disable firewalld
+    $  systemctl disable firewalld
 
- $  yum install -y yum-utils
+    $  yum install -y yum-utils
 
- $  yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
+    $  yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
  
- $  yum install docker-ce docker-ce-cli containerd.io
+    $  yum install docker-ce docker-ce-cli containerd.io
  
- $  systemctl start docker
+    $  systemctl start docker
  
- $  systemctl enable docker
+    $  systemctl enable docker
     
- cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
-   br_netfilte
-   EOF  
+      cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
+      br_netfilte
+      EOF  
 
-cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
-   net.bridge.bridge-nf-call-ip6tables = 1
-   net.bridge.bridge-nf-call-iptables = 1
-   EOF
+     cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+        net.bridge.bridge-nf-call-ip6tables = 1
+        net.bridge.bridge-nf-call-iptables = 1
+        EOF
   
-sudo sysctl --system
+    $ sudo sysctl --system
    
 $  cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
    [kubernetes]
