@@ -1,3 +1,35 @@
+# How to install docker and kubernetes in ubuntu
+
+    $ sudo apt-get update
+    
+    $sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+    
+    $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+ 
+    $ echo \
+      "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+      $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null 
+
+
+## Install Docker 
+      
+      $ sudo apt-get update
+      
+      $ sudo apt-get install docker-ce docker-ce-cli containerd.io
+    
+      $ apt-cache madison docker-ce
+      
+      $ sudo apt-get install docker-ce -y 
+
+## Test Dockers
+
+      $ sudo docker run hello-world
+      
 # How to install docker and kubernetes in centos 
 
     $  systemctl stop firewalld
@@ -58,7 +90,9 @@
 ---------------------------------------------------------
 
 ## Steps to install Kubernetes 
+
 $ kubeadm init --pod-network-cidr=192.168.0.0/16
+
 ### switch off swap memory and every time the system reboots the swap memory is enabled again. 
 
 $ swapoff -a
