@@ -24,8 +24,7 @@
     
       $ apt-cache madison docker-ce
       
-      $ sudo apt-get install docker-ce -y 
-
+   
 ## Test Dockers
 
           $ sudo docker run hello-world
