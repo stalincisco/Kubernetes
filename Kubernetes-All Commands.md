@@ -50,7 +50,7 @@
 
       $ sudo apt-get install -y apt-transport-https ca-certificates curl
       
-  ## Go to Step 2  
+  ## Go to Step 2. Steps to install Kubernetes
 
 --------------------------------------------------------------------------------------
       
