@@ -28,7 +28,7 @@
 
 ## Test Dockers
 
-      $ sudo docker run hello-world
+          $ sudo docker run hello-world
       
 # How to install docker and kubernetes in centos 
 
@@ -91,19 +91,19 @@
 
 ## Steps to install Kubernetes 
 
-$ kubeadm init --pod-network-cidr=192.168.0.0/16
+            $ kubeadm init --pod-network-cidr=192.168.0.0/16
 
 ### switch off swap memory and every time the system reboots the swap memory is enabled again. 
 
-$ swapoff -a
+            $ swapoff -a
 
-$ sudo vi  /etc/fstab
+            $ sudo vi  /etc/fstab
 
-$ kubeadm token create --print-join-command
+            $ kubeadm token create --print-join-command
 
-$ kubectl get pod --all-namespaces
+            $ kubectl get pod --all-namespaces
 
-$ docker ps
+            $ docker ps
 
 
  
