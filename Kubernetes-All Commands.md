@@ -1,5 +1,12 @@
 # How to install docker and kubernetes in ubuntu
 
+
+## install openssh-server 
+    $ sudo apt-get install openssh-server
+    $ sudo service ssh status 
+    $ ssh localhost
+    
+    
     $ sudo apt-get update
     
     $ sudo apt-get install \
