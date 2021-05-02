@@ -58,6 +58,7 @@
       
       $ sudo ufw disable
       
+      $ swapoff -a
 
   ## Go to Step 2. Steps to install Kubernetes
 
