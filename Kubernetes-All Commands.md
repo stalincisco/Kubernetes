@@ -74,7 +74,7 @@ sudo sysctl --system
       $ sudo apt-get install -y kubelet kubeadm kubectl
       $ sudo apt-mark hold kubelet kubeadm kubectl
 
-### 2. Steps to install Kubernetes 
+### 2. Steps to install Kubernetes ( **Note** : This command should be run only on Master Node)
 
             $ kubeadm init --pod-network-cidr=192.168.0.0/16
 
