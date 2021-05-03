@@ -611,11 +611,16 @@ sudo sysctl --system
     $ sudo chmod +x /usr/local/bin/k9s   ( make sure to change the permission ) 
 
   **0 to display all the namespace**
-    :pods list all the namespace 
+   
+     :pods list all the namespace 
+  
   **1 back to the default namespace**
-    :svc will list all the services
-    :daemonset
- #open a different session and deploy ngnix 
+   
+     :svc will list all the services
+    
+     :daemonset
+
+#open a different session and deploy ngnix 
  
     $ kubectl create deploy nginx --image ngnix
     
