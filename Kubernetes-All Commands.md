@@ -598,4 +598,27 @@ sudo sysctl --system
 
 ---------------------------------------------------------
 
+# K9s Dashboard install 
+
+
+    $ cd /usr/local/bin
+    $ https://github.com/derailed/k9s/releases/download/v0.24.8/k9s_Linux_x86_64.tar.gz
+    $ tar zxf k9s_Linux_x86_64.tar.gz
+    $ ls .kube/config - check if you have a working kubernetes 
+
+    $ kubectl get nodes
+
+    $ sudo chmod +x /usr/local/bin/k9s   ( make sure to change the permission ) 
+
+  **0 to display all the namespace**
+    :pods list all the namespace 
+  **1 back to the default namespace**
+    :svc will list all the services
+    :daemonset
+ #open a different session and deploy ngnix 
+ 
+    $ kubectl create deploy nginx --image ngnix
+    
+    :deploy
+
 
