@@ -603,7 +603,7 @@ sudo sysctl --system
 
 
     $ cd /usr/local/bin
-    $ https://github.com/derailed/k9s/releases/download/v0.24.8/k9s_Linux_x86_64.tar.gz
+    $ wget https://github.com/derailed/k9s/releases/download/v0.24.8/k9s_Linux_x86_64.tar.gz
     $ tar zxf k9s_Linux_x86_64.tar.gz
     $ ls .kube/config - check if you have a working kubernetes 
 
