@@ -33,6 +33,18 @@
       
       $ sudo ufw disable   (Disable Firewall)
       
+      $ sudo ufw status verbose (status of the Firewall)
+      
+      $ sudo ufw allow 22/tcp
+      
+      $ sudo ufw allow http
+      
+      $ sudo ufw allow https
+      
+      $ ufw app info Squid
+      
+      $ sudo ufw app list
+      
       $ swapoff -a         (Disable swapoff)
    
 ## Test Dockers
