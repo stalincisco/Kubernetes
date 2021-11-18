@@ -90,6 +90,13 @@ sudo sysctl --system
 
             $ kubeadm init --pod-network-cidr=192.168.0.0/16
 
+### Optional: uninstall Kubeadm 
+
+            $ kubeadm reset
+            $ sudo apt-get purge kubeadm kubectl kubelet kubernetes-cni kube*   
+            $ sudo apt-get autoremove  
+            $ sudo rm -rf ~/.kube
+
 
 ## Go to Step 2. Steps to install Kubernetes
 
